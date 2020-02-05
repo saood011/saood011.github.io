@@ -30,7 +30,7 @@ h2{
 body{
     font-family: 'Raleway', sans-serif;
     height: 600px;
-    background-image: url('./cover');
+    background-image: url('./cover.jpeg');
     background-attachment: fixed;
    
 }
@@ -52,11 +52,20 @@ body{
     font-family: 'Satisfy', cursive; margin: 0px 100px 20px 60%; padding: 10px; 
     }    
 .favi{
-    font-size: 30px; padding: 10px; border: 1px solid black; border-radius: 20px;transition: border-radius .5s ease-in-out;
+    font-size: 30px; padding: 10px; border: 1px solid black; 
     }
-.favi:hover{
+/* .favi:hover{
     background-color: rgb(250, 212, 0);
     border-radius: 40px;
+} */
+.favi:hover{
+    box-shadow:
+                1px 1px black,
+                2px 2px black,
+                3px 3px black;
+        -webkit-transform: translateX(-30px);
+        transform: translateX(-30px);
+        background-color: yellow;
 }
 .fas, .fa-wordpress{
     font-size: 25px;
@@ -608,7 +617,12 @@ a.animated-button.victoria-two:after {
             transform: scale(1) rotateZ(360deg);
   }
 }
-
+.link-size{
+    font-size: 10px;
+}
+.hover-div{
+    text-align: center;
+}
 </style>
 </head>
 <body>
@@ -645,21 +659,21 @@ a.animated-button.victoria-two:after {
     <!-- Photo and introduction -->
     
     <div class="container pt-5 bggrey" id="about"  data-aos-duration="2000">
-        <div class="row bg-white">
+        <div class="row bg-white ">
             <div class="col-sm-5 pt-5 text-center" data-aos="fade-left"  data-aos-duration="2000">
                 <img src="./photo1.jpg"class='w-75 rounded-circle'>       
              </div>
-            <div class="col-sm-7 pt-5 " data-aos="fade-right"  data-aos-duration="2000">
+            <div class="col-sm-7 pt-5 d-flex flex-wrap flex-column justify-content-center align-items-center" data-aos="fade-right"  data-aos-duration="2000">
                 <h1 class="text-center">
                     Hi, I'm <span class="color"> Mohd Saood Akhtar </span>
                 </h1>
                 <p class="text-center">
-                    <em><strong>Tutor - Web Development</strong></em> 
+                    <em><b>Tutor - Web Development</b></em> 
                 </p>
                 <p class="text-justify text-center">
                     Digital Career Institute, Dusseldorf, Germany
                 </p>
-                <table class="table">
+                <table class="table bggrey w-75 text-center">
                     <tbody>
                         <tr>
                             <th scope="row">Age</th>
@@ -718,7 +732,7 @@ a.animated-button.victoria-two:after {
                    <a href="https://www.facebook.com" target="blank"> <i title="Saoodakh7" class="favi fab fa-facebook-f pl-3 pr-3 text-dark" data-aos="flip-left"  data-aos-duration="500" ></i></a>
                     <a href="https://www.instagram.com/saoodakh7/"><i title="saoodakh7" class="favi fab fa-instagram text-dark"  data-aos="flip-right"  data-aos-duration="1000"></i></a>
                     <a href="https://www.linkedin.com/in/saoodakh/"><i title="saoodakh" class="favi fab fa-linkedin text-dark"  data-aos="flip-left"  data-aos-duration="1500"></i></a> 
-                    <a href="https://wa.me/+4915210920149"><i title="+49-15210920149" class="favi fab fa-whatsapp text-dark"  data-aos="flip-right"  data-aos-duration="2000"></i></a>
+                    <a href="https://github.com/saood011"><i title="saood011" class="favi fab fa-github text-dark" data-aos="flip-left"  data-aos-duration="2000"></i i></a>
                     <a href="https://www.xing.com/profile/MohdSaoood_Akhtar/cv" ><i  class="favi fab fa-xing-square text-dark"  data-aos="flip-left"  data-aos-duration="2500"></i></a> 
             </div>
         </div>
@@ -737,75 +751,75 @@ a.animated-button.victoria-two:after {
             <div class="col-sm-6 pt-4" >
             <h3 class=" pb-3">CODING SKILLS</h3> 
             <h5  ><i class="fab fa-js-square rotate-scale-up"></i> JAVASCRIPT </h5>
-            <div class="progress" data-aos="fade-right" data-aos-duration="3000" > 
+            <div class="progress" data-aos="fade-right" data-aos-duration="1000" > 
                 <div class="progress-bar bgcolor" role="progressbar" style="width: 75%;" aria-valuenow="90" aria-valuemin="0"
                 aria-valuemax="100">75%
                 </div>
             </div>
             <br>
             <h5  > <i class="fab fa-html5"></i> HTML & CSS <i class="fab fa-css3-alt"></i></h5>
-            <div class="progress" data-aos="fade-right" data-aos-duration="3000" > 
+            <div class="progress" data-aos="fade-right" data-aos-duration="1000" > 
                 <div class="progress-bar bgcolor" role="progressbar" style="width: 90%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">90%
                 </div>
             </div>
             <br>
             <h5 > <i class="fab fa-react"> REACT</i></h5>
-            <div class="progress"  data-aos="fade-right" data-aos-duration="3000"><div class="progress-bar bgcolor" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div></div> 
+            <div class="progress"  data-aos="fade-right" data-aos-duration="1000"><div class="progress-bar bgcolor" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div></div> 
             
             <br>
             <h5 > <i class="fab fa-node"></i> NODE</h5>
-            <div class="progress"  data-aos="fade-right" data-aos-duration="3000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div></div>
+            <div class="progress"  data-aos="fade-right" data-aos-duration="1000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div></div>
             <br>
 
            
             <h5 > <i class="fab fa-bootstrap"></i> BOOTSTRAP</h5>
-            <div class="progress "  data-aos="fade-right" data-aos-duration="3000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div></div>
+            <div class="progress "  data-aos="fade-right" data-aos-duration="1000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div></div>
             <br>
             <h5  > <i class="fab fa-python"></i> PYTHON</h5>
-            <div class="progress"  data-aos="fade-right" data-aos-duration="3000"> 
+            <div class="progress"  data-aos="fade-right" data-aos-duration="1000"> 
                 <div class="progress-bar bgcolor" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0"
                 aria-valuemax="100">45%
                 </div>
             </div>
             <br>
             <h5 > <i class="fab fa-angular"></i> ANGULAR</h5>
-            <div class="progress" data-aos="fade-right" data-aos-duration="3000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div></div>
+            <div class="progress" data-aos="fade-right" data-aos-duration="1000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div></div>
             <br>
             <h5 > <i class="fab fa-github" ></i> GITHUB</h5>
-            <div class="progress mb-5"  data-aos="fade-right" data-aos-duration="3000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div></div>
+            <div class="progress mb-5"  data-aos="fade-right" data-aos-duration="1000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div></div>
           
         </div>    
         <div class="col-sm-6 pt-4"  >
             <h3 class=" pb-3">CODING AND OTHER SKILLS</h3> 
             <h5 >JQUERY</h5>
-            <div class="progress" data-aos="fade-right" data-aos-duration="3000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 70%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">70%</div></div>
+            <div class="progress" data-aos="fade-right" data-aos-duration="1000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 70%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">70%</div></div>
           
             <br>
             <h5  >Mac OS</h5>
-            <div class="progress" data-aos="fade-right" data-aos-duration="3000" > 
+            <div class="progress" data-aos="fade-right" data-aos-duration="1000" > 
                 <div class="progress-bar bgcolor" role="progressbar" style="width: 70%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">70%
                 </div>
             </div>
             <br>
             <h5 >REDUX</h5>
-            <div class="progress" data-aos="fade-right" data-aos-duration="3000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 60%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">60%</div></div>
+            <div class="progress" data-aos="fade-right" data-aos-duration="1000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 60%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">60%</div></div>
             <br>
             <h5 >WINDOWS</h5>
-            <div class="progress" data-aos="fade-right" data-aos-duration="3000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 80%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">80%</div></div>
+            <div class="progress" data-aos="fade-right" data-aos-duration="1000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 80%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">80%</div></div>
             <br>
             <h5 >LINUX</h5>
-            <div class="progress" data-aos="fade-right" data-aos-duration="3000"><div class="progress-bar bgcolor" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div></div> 
+            <div class="progress" data-aos="fade-right" data-aos-duration="1000"><div class="progress-bar bgcolor" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div></div> 
             <br>
             <h5 >EXPRESS</h5>
-            <div class="progress " data-aos="fade-right" data-aos-duration="3000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 70%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">70%</div>
+            <div class="progress " data-aos="fade-right" data-aos-duration="1000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 70%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">70%</div>
              </div>
            
             <br>
             <h5 >MongoDB</h5>
-            <div class="progress" data-aos="fade-right" data-aos-duration="3000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 65%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">65%</div></div>
+            <div class="progress" data-aos="fade-right" data-aos-duration="1000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 65%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">65%</div></div>
             <br>
             <h5  >HANDLEBARS</h5>
-            <div class="progress mb-5" data-aos="fade-right" data-aos-duration="3000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 70%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">70%</div></div>
+            <div class="progress mb-5" data-aos="fade-right" data-aos-duration="1000"> <div class="progress-bar bgcolor" role="progressbar" style="width: 70%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">70%</div></div>
           
         </div>   
         </div>
@@ -855,14 +869,16 @@ a.animated-button.victoria-two:after {
                     <div class="col-sm-6 lorem p-0 inside-para3 " data-aos="fade-up" data-aos-duration="2000" >
                         <div class="para">
                             <p class="text-justify p-3 bg-white inside-para">
-                            <b>One Year Intensive Web Development Course</b>  <br>
-                            <span>2019-2020</span>  <br>
+                            <b>One Year Intensive Web Development Course &nbsp;&nbsp;</b>  <br>
+                            <span>Feburary 2019-2020</span>  <br>
                             <span>Digital Career Institute, Dusseldorf, Germany</span> </p></div> 
                     </div>                        
             </div>
         </div>
     </div>
+
 <!-- Experience -->    
+
 <div id="services" class="">
 <div class="container topspace pl-5 pr-5 pb-5"  data-aos="fade-up" data-aos-duration="1000">
     <div class="row col-sm-12 justify-content-center m-0">
@@ -870,7 +886,7 @@ a.animated-button.victoria-two:after {
     </div>
     <div class="row">
             <div class="col-sm-6 p-4 d-flex flex-column align-items-center">
-            <div class="favdiv text-center"  data-aos="zoom-out-down"  data-aos-duration="2000">
+            <div class="favdiv text-center"  data-aos="zoom-in"  data-aos-duration="2000">
             <img class="flag" src="./german.png" alt="Germany">
             </div>
             <h4>Tutor</h4>
@@ -878,7 +894,7 @@ a.animated-button.victoria-two:after {
             <b>2018 May - Present</b>
         </div>
         <div class="col-sm-6 p-4 d-flex flex-column align-items-center">
-                <div class="favdiv text-center"  data-aos="zoom-out-down"  data-aos-duration="2500" >
+                <div class="favdiv text-center"  data-aos="zoom-in"  data-aos-duration="2500" >
                 <img class="flag" src="./oman.png" alt="Oman">
                </div>
                 <h4 class="text-center">Sales and Purchase Manager</h4>
@@ -888,7 +904,7 @@ a.animated-button.victoria-two:after {
     </div>
     <div class="row">
             <div class="col-sm-6 p-4 d-flex flex-column align-items-center">
-                <div class="favdiv text-center"  data-aos="zoom-out-down"  data-aos-duration="3000" >
+                <div class="favdiv text-center"  data-aos="zoom-in"  data-aos-duration="3000" >
                     <img class="flag" src="./indian.png" alt="India">
                 </div>
                 <h4>Executive Officer</h4>
@@ -896,7 +912,7 @@ a.animated-button.victoria-two:after {
                 <b>2010 December - 2008 January</b>
             </div>
     <div class="col-sm-6 p-4 d-flex flex-column align-items-center">
-            <div class="favdiv text-center"  data-aos="zoom-out-down"  data-aos-duration="3000" >
+            <div class="favdiv text-center"  data-aos="zoom-in"  data-aos-duration="3000" >
                     <img class="flag" src="./indian.png" alt="India">
                 </div>
                 <h4>Project Coordinator</h4>
@@ -911,16 +927,15 @@ a.animated-button.victoria-two:after {
 
 <div class="container bggrey bg-transparent" id="portfolio" data-aos="fade-up" data-aos-duration="2000">
         <div class="row col-sm-12 justify-content-center m-0">
-            <h2 class="text-center border border-dark p-3 m-5">PORTFOLIO</h2>
+            <h2 class="text-center border border-white p-3 m-5 text-white">PORTFOLIO</h2>
         </div>
         <div class="row col-sm-12 d-flex flex-column align-items-center justify-content-center m-0 p-0" >
                 <nav>
                     <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                         <a class="nav-item nav-link m-0 active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">All</a>
-
                         <a class="nav-item nav-link m-0" id="nav-profile-tab" data-toggle="tab" href="#nav-javascript" role="tab" aria-controls="nav-javascript" aria-selected="false">Javascript</a>
                         <a class="nav-item nav-link m-0" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">React</a>
-                        <a class="nav-item nav-link m-0" id="nav-redux-tab" data-toggle="tab" href="#nav-redux" role="tab" aria-controls="nav-redux" aria-selected="false">Redux</a>
+                        <a class="nav-item nav-link m-0" id="nav-redux-tab" data-toggle="tab" href="#nav-redux" role="tab" aria-controls="nav-redux" aria-selected="false">Full-Stack</a>
                         <a class="nav-item nav-link m-0" id="nav-node-tab" data-toggle="tab" href="#nav-node" role="tab" aria-controls="nav-node" aria-selected="false">Node</a>
 
                     </div>
@@ -928,82 +943,370 @@ a.animated-button.victoria-two:after {
                       <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                             <div class="d-flex images flex-wrap align-items-center justify-content-center" >
+                                <!-- global chat -->
                                 <div class="m-3 hovertext">
                                     <div class="imagediv images">
-                                        <img src="https://source.unsplash.com/random/200x200" alt="">
+                                        <img src="./globalchat.gif" alt="">
                                         <div class="overlay"><div></div></div> 
                                     </div>
-                                    <h6 class="text-center m-0 p-1"> <b><a href="https://chatwithsaood.herokuapp.com/" target="blank">The Global Chat!</a> </b></h6>
-                                    <p class="text-center m-0 p-1"> <b>Technologies used: </b>  <p class="text-center"> <em>React,Express, MongoDB, Node,</em> </p></p>
-                                </div>  
-                                <div class="m-3 hovertext">
-                                    <div class="imagediv images">
-                                        <img src="https://source.unsplash.com/random/207x200" alt="">
-                                        <div class="overlay"><div></div></div> 
-                                    </div>
-                                    <h6 class="text-center m-0 p-1"> <b><a href="https://contactlist07.herokuapp.com/" target="blank">Contact List App</a> </b></h6>
-                                    <p class="text-center m-0 p-1"> <b>Technologies used: </b>  <p class="text-center"> <em>Express, MongoDB, Handlebars</em> </p></p>
-                                </div>  
+                                        <h6 class="text-center m-0 p-1">
+                                        <a href="https://chatwithsaood.herokuapp.com/" target="blank">
+                                            <button class="btn btn-danger w-100">The Global Chat!</button>
+                                        </a> 
+                                        <button class="btn-sm btn-light btn  mt-1 " data-toggle="modal" data-target="#staticBackdrop" ><span>Tech Stack</span> <i class="fas fa-external-link-alt link-size"></i> </button> 
 
-                                <div class="m-3 hovertext">
-                                    <div class="imagediv images">
-                                        <img src="https://source.unsplash.com/random/206x200" alt="">
-                                        <div class="overlay"><div></div></div> 
-                                    </div>
-                                    <h6 class="text-center m-0 p-1"> <b><a href="https://saood011.github.io/My_First_Project/" target="blank">My First Project</a> </b></h6>
-                                    <p class="text-center m-0 p-1"> <b>Technologies used:</b>  <p class="text-center"> <em>HTML, CSS</em> </p></p>
-                               </div>  
-                               
-                                <div class="m-3 hovertext">
-                                           
-                                    <div class="imagediv images">
-                                        <img src="https://source.unsplash.com/random/201x200" alt="">
-                                        <div class="overlay"><div></div></div> 
-                                    </div>
-                                        <h6 class="text-center m-0 p-1"> <b> <a href="https://saood011.github.io/image_search_engine/" target="blank"> HD Image search</a> </b></h6>
-                                        <p class="text-center m-0 p-1"> <b>Technologies used:</b>  <p class="text-center"> <em>REACT, Axios, Semantic-UI</em> </p></p>
-                                </div>
-                                       <div class="m-3 hovertext">
-                                            <div class="imagediv images">
-                                                    <img src="https://source.unsplash.com/random/202x200" alt="">
-                                                    <div class="overlay"><div></div></div> 
+                                        </h6>
+                                </div>  
+                                <!-- global chat Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog m-auto" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h6 class="modal-title " id="staticBackdropLabel">Tech Stack Used For The GlobalChat </h6>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                             </div>
-                                                    <h6 class="text-center m-0 p-1"> <b><a href="https://saood011.github.io/githubcardapp/" target="blank">Git Hub Info</a> </b></h6>
-                                                    <p class="text-center m-0 p-1"> <b>Technologies used:</b>  <p class="text-center"> <em>REACT, Axios</em> </p></p>
-                                                </div>
-                                       <div class="m-3 hovertext">
-                                            <div class="imagediv images">
-                                                    <img src="https://source.unsplash.com/random/203x200" alt="">
-                                                    <div class="overlay"><div></div></div> 
+                                            <div class="modal-body">
+                                            <span class="bg-warning text-white p-2 m-1 d-inline-block shadow rounded"> ReactJS </span>
+                                            <span class="bg-warning text-white p-2 m-1 d-inline-block shadow rounded"> Semantic-UI-React </span>
+                                            <span class="bg-warning text-white p-2 m-1 d-inline-block shadow rounded"> Axios </span> 
+                                            <span class="bg-warning text-white p-2 m-1 d-inline-block shadow rounded"> Scrollable </span>
+                                            <span class="bg-warning text-white p-2 m-1 d-inline-block shadow rounded"> React-animation</span>
+                                            <span class="bg-warning text-white p-2 m-1 d-inline-block shadow rounded"> Emoji-Mart</span>
+                                            <span class="bg-success text-white p-2 m-1 d-inline-block shadow rounded"> NodeJs</span>
+                                            <span class="bg-success text-white p-2 m-1 d-inline-block shadow rounded"> Express</span>
+                                            <span class="bg-success text-white p-2 m-1 d-inline-block shadow rounded"> Nodemailer</span>
+                                            <span class="bg-success text-white p-2 m-1 d-inline-block shadow rounded"> NodeJs</span>
+                                            <span class="bg-success text-white p-2 m-1 d-inline-block shadow rounded"> Sockets</span>
+                                            <span class="bg-primary text-white p-2 m-1 d-inline-block shadow rounded"> MongoDB</span>
+
                                             </div>
-                                            <h6 class="text-center m-0 p-1"> <b><a href="https://saood011.github.io/todolist/" target="blank">To do list</a> </b></h6>
-                                            <p class="text-center m-0 p-1"> <b>Technologies used:</b>  <p class="text-center"> <em>REACT</em> </p></p>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
-                                       <div class="m-3 hovertext">
-                                        <div class="imagediv images">
-                                                <img src="https://source.unsplash.com/random/208x200" alt="">
-                                                <div class="overlay"><div></div></div> 
                                         </div>
-                                        <h6 class="text-center m-0 p-1"> <b><a href="https://saood011.github.io/QuizApp/" target="blank">Quiz App</a> </b></h6>
-                                        <p class="text-center m-0 p-1"> <b>Technologies used:</b>  <p class="text-center"> <em>REACT</em> </p></p>
-                                   </div>
+                                    </div>
+                                <!-- global chat Modal end -->
+
+                                   <!-- Contact list -->
                                    <div class="m-3 hovertext">
                                     <div class="imagediv images">
-                                            <img src="https://source.unsplash.com/random/209x200" alt="">
-                                            <div class="overlay"><div></div></div> 
-                                    </div>
-                                    <h6 class="text-center m-0 p-1"> <b><a href="https://saood011.github.io/weather-app/" target="blank">Weather Forecast</a> </b></h6>
-                                    <p class="text-center m-0 p-1"> <b>Technologies used:</b>  <p class="text-center"> <em>Javascritp, Handlebars, jQuery</em> </p></p>
-                                </div>
-                               <div class="m-3 hovertext">
-                                <div class="imagediv images">
-                                        <img src="https://source.unsplash.com/random/210x200" alt="">
+                                        <img src="./contact.gif" alt="">
                                         <div class="overlay"><div></div></div> 
+                                    </div>
+                                        <h6 class="text-center m-0 p-1">
+                                        <a href="https://contactlist07.herokuapp.com/" target="blank">
+                                            <button class="btn btn-danger w-100">Contact List App</button>
+                                        </a> 
+                                        <button class="btn-sm btn-light btn  mt-1" data-toggle="modal" data-target="#staticBackdrop-contact" > Tech Stack <i class="fas fa-external-link-alt link-size"></i></button> 
+
+                                        </h6>
+                                </div>  
+                                <!-- contact list Modal -->
+                                    <div class="modal fade" id="staticBackdrop-contact" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog m-auto" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h6 class="modal-title " id="staticBackdropLabel">Tech Stack Used For Contact List App </h6>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <span class="bg-warning text-white p-2 m-1 d-inline-block shadow rounded"> Handlebars </span>
+                                            <span class="bg-warning text-white p-2 m-1 d-inline-block shadow rounded"> Bootstrap </span>
+                                            <span class="bg-warning text-white p-2 m-1 d-inline-block shadow rounded"> Axios </span> 
+                                            <span class="bg-success text-white p-2 m-1 d-inline-block shadow rounded"> Express</span>
+                                            <span class="bg-success text-white p-2 m-1 d-inline-block shadow rounded"> Nodemailer</span>
+                                            <span class="bg-success text-white p-2 m-1 d-inline-block shadow rounded"> NodeJs</span>
+                                            <span class="bg-primary text-white p-2 m-1 d-inline-block shadow rounded"> MongoDB</span>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                <!-- contact list Modal end -->
+
+                                
+                                   <!-- My First Project -->
+
+                                   <div class="m-3 hovertext">
+                                    <div class="imagediv images">
+                                        <img src="./firstproject.gif" alt="">
+                                        <div class="overlay"><div></div></div> 
+                                    </div>
+                                        <h6 class="text-center m-0 p-1">
+                                        <a href="https://saood011.github.io/My_First_Project" target="blank">
+                                            <button class="btn btn-danger w-100">My First Project</button>
+                                        </a> 
+                                        <button class="btn-sm btn-light btn  mt-1" data-toggle="modal" data-target="#staticBackdrop-firstProject" > Tech Stack <i class="fas fa-external-link-alt link-size"></i></button> 
+
+                                        </h6>
+                                </div>  
+                                <!--MyFirst Project Modal -->
+                                    <div class="modal fade" id="staticBackdrop-firstProject" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog m-auto" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h6 class="modal-title " id="staticBackdropLabel">Tech Stack Used For My First Project </h6>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <span class="bg-warning text-white p-2 m-1 d-inline-block shadow rounded"> HTML </span>
+                                            <span class="bg-warning text-white p-2 m-1 d-inline-block shadow rounded"> CSS </span>
+                                       
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                <!-- My First project Modal end -->
+
+                                <!-- HD Image Search-->
+
+                                <div class="m-3 hovertext">
+                                <div class="imagediv images">
+                                    <img src="./hdsearch.gif" alt="">
+                                    <div class="overlay"><div></div></div> 
                                 </div>
-                                <h6 class="text-center m-0 p-1"> <b><a href="https://saood011.github.io/reactcalc/" target="blank">Calculator - React</a> </b></h6>
-                                <p class="text-center m-0 p-1"> <b>Technologies used:</b>  <p class="text-center"> <em>REACT</em> </p></p>
+                                    <h6 class="text-center m-0 p-1">
+                                    <a href="https://saood011.github.io/image_search_engine/" target="blank">
+                                        <button class="btn btn-danger w-100">HD Image Search</button>
+                                    </a> 
+                                    <button class="btn-sm btn-light btn  mt-1" data-toggle="modal" data-target="#staticBackdrop-HDImage" > Tech Stack <i class="fas fa-external-link-alt link-size"></i></button> 
+
+                                    </h6>
+                            </div>  
+                            <!--HD Image Modal -->
+                                <div class="modal fade" id="staticBackdrop-HDImage" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog m-auto" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h6 class="modal-title " id="staticBackdropLabel">Tech Stack Used For HD Image Search </h6>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> HTML </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> CSS </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> Bootstrap </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> ReactJS </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> Axios </span> 
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            <!--HD Image Modal end -->
+
+
+                            <!-- Github Info-->
+
+                            <div class="m-3 hovertext">
+                                <div class="imagediv images">
+                                    <img src="./githubcard.gif" alt="">
+                                    <div class="overlay"><div></div></div> 
+                                </div>
+                                    <h6 class="text-center m-0 p-1">
+                                    <a href="https://saood011.github.io/githubcardapp/" target="blank">
+                                        <button class="btn btn-danger w-100">Github Info</button>
+                                    </a> 
+                                    <button class="btn-sm btn-light btn  mt-1" data-toggle="modal" data-target="#staticBackdrop-githubcard" > Tech Stack <i class="fas fa-external-link-alt link-size"></i></button> 
+
+                                    </h6>
+                            </div>  
+                            <!--Github Info Modal -->
+                                <div class="modal fade" id="staticBackdrop-githubcard" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog m-auto" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h6 class="modal-title " id="staticBackdropLabel">Tech Stack Used For Github Info </h6>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> HTML </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> CSS </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> Bootstrap </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> ReactJS </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> Axios </span> 
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            <!--Github info Modal end -->
+                             
+                              <!-- Todo App Info-->
+
+                              <div class="m-3 hovertext">
+                                <div class="imagediv images">
+                                    <img src="./todo.png" alt="">
+                                    <div class="overlay"><div></div></div> 
+                                </div>
+                                    <h6 class="text-center m-0 p-1">
+                                    <a href="https://saood011.github.io/todolist/" target="blank">
+                                        <button class="btn btn-danger w-100"> Todo App </button>
+                                    </a> 
+                                    <button class="btn-sm btn-light btn  mt-1" data-toggle="modal" data-target="#staticBackdrop-todoapp" > Tech Stack <i class="fas fa-external-link-alt link-size"></i></button> 
+
+                                    </h6>
+                            </div>  
+                            <!--Todo App Modal -->
+                                <div class="modal fade" id="staticBackdrop-todoapp" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog m-auto" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h6 class="modal-title " id="staticBackdropLabel">Tech Stack Used For Todo App </h6>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> HTML </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> CSS </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> Bootstrap </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> ReactJS </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> Axios </span> 
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            <!--Todo Modal end -->
+                            
+                             <!-- Quiz App Info-->
+                             <div class="m-3 hovertext">
+                                <div class="imagediv images">
+                                    <img src="./quiz.gif" alt="">
+                                    <div class="overlay"><div></div></div> 
+                                </div>
+                                    <h6 class="text-center m-0 p-1">
+                                    <a href="https://saood011.github.io/QuizApp/" target="blank">
+                                        <button class="btn btn-danger w-100"> Quiz App </button>
+                                    </a> 
+                                    <button class="btn-sm btn-light btn  mt-1" data-toggle="modal" data-target="#staticBackdrop-quizapp" > Tech Stack <i class="fas fa-external-link-alt link-size"></i></button> 
+
+                                    </h6>
+                            </div>  
+                            <!--Quiz App Modal -->
+                                <div class="modal fade" id="staticBackdrop-quizapp" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog m-auto" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h6 class="modal-title " id="staticBackdropLabel">Tech Stack Used For Quiz App </h6>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> HTML </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> CSS </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> Bootstrap </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> ReactJS </span>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            <!--Quiz Modal end -->
+                                
+                                     <!-- Weather App Info-->
+                             <div class="m-3 hovertext">
+                                <div class="imagediv images">
+                                    <img src="./weather.gif" alt="">
+                                    <div class="overlay"><div></div></div> 
+                                </div>
+                                    <h6 class="text-center m-0 p-1">
+                                    <a href="https://saood011.github.io/weather-app/" target="blank">
+                                        <button class="btn btn-danger w-100"> Weather Forecast </button>
+                                    </a> 
+                                    <button class="btn-sm btn-light btn  mt-1" data-toggle="modal" data-target="#staticBackdrop-weather" > Tech Stack <i class="fas fa-external-link-alt link-size"></i></button> 
+
+                                    </h6>
+                            </div>  
+                            <!--Weather App Modal -->
+                                <div class="modal fade" id="staticBackdrop-weather" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog m-auto" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h6 class="modal-title " id="staticBackdropLabel">Tech Stack Used For Weather App </h6>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> HTML </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> CSS </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> Handlebars </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> Javascript </span>
+                                        <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> jQuery </span>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            <!--Weather Modal end -->
+                              
+                  <!-- Calc App Info-->
+                 <!--  <div class="m-3 hovertext">
+                    <div class="imagediv images">
+                        <img src="./contact.gif" alt="">
+                        <div class="overlay"><div></div></div> 
+                    </div>
+                        <h6 class="text-center m-0 p-1">
+                        <a href="https://saood011.github.io/reactcalc/" target="blank">
+                            <button class="btn btn-danger w-100 shadow"> Reach Calculator </button>
+                        </a> 
+                        <button class="btn-sm btn-light btn  mt-1" data-toggle="modal" data-target="#staticBackdrop-calc" > Tech Stack <i class="fas fa-external-link-alt link-size"></i></button> 
+
+                        </h6>
+                </div>   -->
+                <!--calc App Modal -->
+                 <!--    <div class="modal fade" id="staticBackdrop-calc" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog m-auto" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h6 class="modal-title " id="staticBackdropLabel">Tech Stack Used For React Calc </h6>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                             </div>
-                                    
+                            <div class="modal-body">
+                            <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> HTML </span>
+                            <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> CSS </span>
+                            <span class="bg-warning p-2 m-1 d-inline-block shadow rounded"> ReactJS </span>
+
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div> -->
+                <!--calc Modal end -->
+                                   
                             </div> 
                         </div>
                         <div class="tab-pane fade" id="nav-javascript" role="tabpanel" aria-labelledby="nav-javascript-tab">
