@@ -173,12 +173,14 @@ body {
 .inside-para {
   width: 80%;
   height: 150px;
+  background-color: lightgrey !important;
 }
 .inside-para1 {
   width: 80%;
   margin-left: 105px;
   height: 150px;
   text-align: center;
+  background-color: lightgrey !important;
 }
 .margintop {
   margin-top: 100px;
@@ -246,11 +248,15 @@ td {
   .lorem .inside-para {
     width: inherit;
     margin: 10px;
+    text-align: center !important;
+    padding: 30px !important;
   }
   .lorem1 .inside-para1,
   .inside-para3 {
     width: inherit;
     margin: 10px 10px 10px 10px;
+    text-align: center !important;
+    padding: 30px !important;
   }
   .margintop {
     margin-top: 0px;
@@ -260,6 +266,8 @@ td {
   }
   .inside-para3 {
     top: 10px;
+    width: inherit;
+    padding: 0px !important;
   }
   .lorem2 {
     top: 10px;
@@ -689,4 +697,12 @@ button.primary.ghost {
   font-size: 12px;
   margin: 0 7px 7px 0;
   padding: 7px;
+}
+@media only screen and (max-width: 1000px) {
+  .card-container {
+    margin-left: 10px;
+  }
+  .margind {
+    margin-left: 50%;
+  }
 }
