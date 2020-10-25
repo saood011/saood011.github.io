@@ -700,7 +700,7 @@ button.primary.ghost {
 }
 @media only screen and (max-width: 1000px) {
   .card-container {
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .margind {
     margin-left: 50%;
